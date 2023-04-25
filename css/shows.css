@@ -1,0 +1,33 @@
+body {
+    background-color: #007bff;
+}
+
+/*Navbar styles*/
+
+#navbar ul li a {
+    font-style: normal;
+    color:white;
+    background-color: black;
+}
+
+#navbar ul li a:hover, a:focus {
+    font-style: italic;
+    color:#007bff;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/*Modal css*/
+#tosModalButton:hover, #tosModalButton:focus,
+#privModalButton:hover, #privModalButton:focus
+, #profModalButton:hover, #profModalButton:focus{
+    background-color: orange;
+}

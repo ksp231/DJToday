@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Developed by Kevin Pollonais, IS117-002, Spring, 2023-->
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Testimonials</title>
+</head>
+
+<body>
+
+    <!--Logo-->
+    <div class="container-fluid p-2 bg-black text-primary text-center fst-italic fw-bold">
+        <p class="display-1">DJ Today</p>
+    </div>
+
+    <!-- nav menu -->
+    <div class="container-fluid p-2 mb-3 bg-dark">
+        <!-- nav menu -->
+        <div class="container-fluid">
+            <nav id="nav" class="navbar-expand text-white">
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Home</a> </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="#">Shows</a>
+                        <ul class="dropdown-menu" id="showDrop">
+                            <li> <a class="dropdown-item" href="show_pages/Past_Shows.html">Past Shows</a> </li>
+                            <li> <a class="dropdown-item" href="show_pages/Future_Shows.html">Future Shows </a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Book_Me.html">Book Me</a> </li>
+
+                    <li class="nav-item dropdown" id="playDrop">
+                        <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="#">Playlists</a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="playlist_pages/House_Playlist.html">House</a> </li>
+                            <li> <a class="dropdown-item" href="playlist_pages/Pop_Playlist.html">Pop</a> </li>
+                            <li> <a class="dropdown-item" href="playlist_pages/Nu-Disco_Playlist.html">Nu-Disco</a> </li>
+                            <li> <a class="dropdown-item" href="playlist_pages/Prof_Playlist.html">Professor's Favorites</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Testimonials.html">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_Me.html">About Me</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Page label-->
+    <div class="container-sm bg-black text-white text-center">
+        <p class="display-3">Customer Testimonials</p>
+    </div>
+
+    <!--Testimonial cards-->
+    <main>
+        <div class="container">
+            <div class="row" id="testRow">
+                <div class="col-lg">
+                    <!--Testimonial 1-->
+                    <div class="card" id="card1">
+                        <div class="card-content">
+                            <div class="card-img-top ">
+                                <img src="../images/Customers/Emperor.png" alt="Emperor Palpatine" width="100%">
+                            </div>
+                            <div class="card-title">
+                                <h2>Sheev Palpatine - Satisfied Customer</h2>
+                            </div>
+                            <div class="card-text">
+                                <blockquote>"Celebrated the Death Star's grand opening with him. Was very gooooood. His beats were so hot my apprentice now wears a suit! The force is strong with this one."</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <!--Testimonial 2-->
+                    <div class="card" id="card2">
+                        <div class="card-content">
+                            <div class="card-img-top ">
+                                <img src="../images/Customers/Astley.png" alt="Rick Astley" width="100%">
+                            </div>
+                            <div class="card-title">
+                                <h2>Rick Astley - Satisfied Customer</h2>
+                            </div>
+                            <div class="card-text">
+                                <blockquote>
+                                    "I'm no stranger to good music.
+                                    I just wanna tell you how I'm feeling.
+                                    If you give him a chance, he can make you dance.
+                                    You wouldn't get this from any other guy.
+                                    Gotta make you understand.
+                                    DJ KJ is never gonna let you down."
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <!--Testimonial 3-->
+                    <div class="card" id="card3">
+                        <div class="card-content">
+                            <div class="card-img-top ">
+                                <img src="../images/Customers/Obamna.png" alt="Obama" width="100%">
+                            </div>
+                            <div class="card-title">
+                                <h2>Barack Obama - Satisfied Customer</h2>
+                            </div>
+                            <div class="card-text">
+                                <blockquote>
+                                    "Let me be clear.
+                                    Michelle and I booked him for our 4th of July party, and we were impressed with his skills.
+                                    If I was in the White House he'd perform daily!"
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <span>&copy Copyright Kevin Pollonais 2023
+            <button id="tosModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#tosModal">Terms of Use</button>
+            <button id="privModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#privModal">Privacy</button>
+                <button id="profModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#profModal">For Professor</button> </span>
+        </div>
+    </footer>
+
+
+</body>
+
+<!--Modals-->
+<div class="modal" id="tosModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">DJ Today TOS</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>This was created for EDUCATIONAL purposes.</li>
+                    <li>Any resemblance to real people is merely coincidental.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="privModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Privacy Notice</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Everything you do is being tracked by the government.</li>
+                    <li>You lost the right to privacy when you were born.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                    <li>I am inside your walls.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="profModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Notes to Professor</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Turned in late for visual polishing and audio.</li>
+                    <li>None of this is serious.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                    <li>I appreciated your jokes. Thanks for making an 8:30 class enjoyable.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #007bff;
+}
+
+/*Nav bar styles*/
+
+#nav {
+    display:grid;
+    justify-content: center;
+    font-size: 200%;
+}
+
+#nav ul li a {
+    font-style: normal;
+    color:white;
+}
+
+#nav ul li a:hover, a:focus {
+    font-style: italic;
+    color:#007bff;
+    font-weight: bold;
+}
+
+#playDrop li a, #showDrop li a {
+    font-style: normal;
+    color:white;
+    background-color: #343a40;
+}
+
+#me {
+    float: left;
+    clear: left;
+    height: 320px;
+    margin: 10px;
+    background-color: #656565;
+}
+
+/*card css*/
+
+.card {
+    height: 600px;
+}
+
+#card1 , #card2, #card3 {
+    margin: 50px 0;
+    background-color: #656565;
+    text-align: center;
+    color: white;
+}
+
+.card-img-top img{
+    height: 350px;
+}
+
+/*My Contact Info  css*/
+
+#conMe {
+    border: 10px solid red;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+#conMe a {
+    color: white;
+}
+
+#conMe img {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+/*footer css*/
+
+footer {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/*Modal css*/
+#tosModalButton:hover, #tosModalButton:focus,
+#privModalButton:hover, #privModalButton:focus
+, #profModalButton:hover, #profModalButton:focus{
+    background-color: orange;
+}

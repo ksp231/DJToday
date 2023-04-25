@@ -4,60 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/showForm.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Book Me</title>
 </head>
 
 <body>
-
-    <div class="container-fluid p-2 mb-3 bg-black text-primary text-center fst-italic">
+    <div class="container-fluid p-2 bg-black text-primary text-center fst-italic">
         <p class="display-1">DJ Today</p>
     </div>
 
-    <div class="container-sm bg-black text-white">
-        <p class="display-1">Book Me</p>
-    </div>
-
     <!-- nav menu -->
-    <div class="container-sm bg-black">
-        <nav id="navbar" class="navbar-expand text-white">
-            <ul class="nav ">
-                <li class="nav-item">
-                    <a class="nav-link active" href="Home.html">Home</a> </li>
+    <div class="container-fluid p-2 mb-3 bg-dark">
+        <!-- nav menu -->
+        <div class="container-fluid">
+            <nav id="nav" class="navbar-expand text-white">
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Home</a> </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="Shows.html">Shows</a>
-                    <ul class="dropdown-menu">
-                        <li> <a class="dropdown-item" href="Shows.html">Past Shows</a> </li>
-                        <li> <a class="dropdown-item" href="Shows.html">Future Shows </a> </li>
-                    </ul>
-                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="#">Shows</a>
+                        <ul class="dropdown-menu" id="showDrop">
+                            <li> <a class="dropdown-item" href="show_pages/Past_Shows.html">Past Shows</a> </li>
+                            <li> <a class="dropdown-item" href="show_pages/Future_Shows.html">Future Shows </a> </li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="Book_Me.html">Book Me</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Book_Me.html">Book Me</a> </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="Playlists.html">Playlists</a>
-                    <ul class="dropdown-menu">
-                        <li> <a class="dropdown-item" href="#">House</a> </li>
-                        <li> <a class="dropdown-item" href="#">Pop</a> </li>
-                        <li> <a class="dropdown-item" href="#">Nu-Disco</a> </li>
-                        <li> <a class="dropdown-item" href="#"></a> </li>
-                    </ul>
-                </li>
+                    <li class="nav-item dropdown" id="playDrop">
+                        <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="#">Playlists</a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="playlist_pages/House_Playlist.html">House</a> </li>
+                            <li> <a class="dropdown-item" href="playlist_pages/Pop_Playlist.html">Pop</a> </li>
+                            <li> <a class="dropdown-item" href="playlist_pages/Nu-Disco_Playlist.html">Nu-Disco</a> </li>
+                            <li> <a class="dropdown-item" href="playlist_pages/Prof_Playlist.html">Professor's Favorites</a> </li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./About_Me.html">About Me</a>
-                </li>
-            </ul>
-        </nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Testimonials.html">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_Me.html">About Me</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
     </div>
 
+    <main>
+        <div class="container-sm bg-black text-white text-center">
+            <p class="display-1">Book Me</p>
+        </div>
+
+        <!--Book Me Form-->
+        <div class="container">
+            <form>
+                <h3 class="pb-3 text-center">Book Me for an Event:</h3>
+                <h4 class="pb-3">Type of Event:</h4>
+                <!--Small/Personal-->
+                <div class="form-check">
+                    <input class="form-check-input" name="eType" id="personal" type="radio">
+                    <label class="form-check-label" for="personal">Personal Request</label>
+                </div>
+                <!--Medium Party-->
+                <div class="form-check">
+                    <input class="form-check-input" name="eType" id="medium" type="radio">
+                    <label class="form-check-label" for="medium">Medium Party</label>
+                </div>
+                <!--Club/Large Gathering-->
+                <div class="form-check mb-2">
+                    <input class="form-check-input" name="eType" id="club" type="radio">
+                    <label class="form-check-label" for="club">Club/Large Gathering</label>
+                </div>
+                <!--Address-->
+                <div class="form mb-2">
+                    <label class="form-label" for="address">Event Address:</label>
+                    <input class="form-input" type="text" id="address" placeholder="308 Negra Arroyo Lane">
+                </div>
+                <!--Date Input-->
+                <div class="form mb-2">
+                    <label class="form-label" for="date">Event Starts:</label>
+                    <input class="form-input" type="datetime-local" id="date">
+                    <label class="form-label" for="end">Event Ends:</label>
+                    <input class="form-input" type="time" name="end" id="end">
+                </div>
+                <!--Music Preferences-->
+                <div class="form mb-2">
+                    <p>Music Preferences:</p>
+                    <!--House-->
+                    <input class="form-check-input" name="house" id="house" type="checkbox">
+                    <label class="form-label" for="house">House</label>
+                    <!--Pop-->
+                    <input class="form-check-input" name="pop" id="pop" type="checkbox">
+                    <label class="form-check-label" for="pop">Pop</label>
+                    <!--NuD-Disco-->
+                    <input class="form-check-input" name="disco" id="disco" type="checkbox">
+                    <label class="form-label" for="disco">Nu-Disco</label>
+                    <!--Trap-->
+                    <input class="form-check-input" name="trap" id="trap" type="checkbox">
+                    <label class="form-label" for="trap">Trap</label>
+                </div>
+                <!--Client Contact Info-->
+                <div class="form mb-2">
+                    <label class="form-label" for="client">Enter Contact Info Here:</label>
+                    <input class="form-control" name="client" id="client" type="email">
+                </div>
+                <!--TOS Checkbox-->
+                <div class="form-check mb-2">
+                    <input class="form-check-input" name="tos" id="tos" type="checkbox" required>
+                    <label class="form-check-label" for="tos">I agree to the TOS</label>
+                </div>
+                <!--Submit-->
+                <div class="form mb-2">
+                    <input type="submit">
+                </div>
+
+            </form>
+        </div>
+
+        <!--My Contact Info-->
+        <div class="container" id="conMe">
+            <h5 class="pt-3">Got Questions? Contact Me Here:</h5>
+            <p>Discord: <a href="https://discord.com/users/Jeggdude#7455"><img src="../images/misc/discord_logo.png" alt="Discord Logo"></a>
+            Email: <a href="mailto:ksp23@njit.edu">ksp23@njit.edu</a></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <span>&copy Copyright Kevin Pollonais 2023
+            <button id="tosModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#tosModal">Terms of Use</button>
+            <button id="privModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#privModal">Privacy</button>
+                <button id="profModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#profModal">For Professor</button> </span>
+        </div>
+    </footer>
 </body>
 
-<footer>
-    <p>Copyright Kevin Pollonais 2023</p>
-</footer>
+<!--Modals-->
+<div class="modal" id="tosModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">DJ Today TOS</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>This was created for EDUCATIONAL purposes.</li>
+                    <li>Any resemblance to real people is merely coincidental.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-</html>
+<div class="modal" id="privModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Privacy Notice</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Everything you do is being tracked by the government.</li>
+                    <li>You lost the right to privacy when you were born.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                    <li>I am inside your walls.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="profModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Notes to Professor</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Turned in a day late for visual polishing and audio.</li>
+                    <li>None of this is serious.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                    <li>I appreciated your jokes. Thanks for making an 8:30 class enjoyable.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,67 +4,187 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/about.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>About Me</title>
 </head>
 
 <body>
 
-    <div class="container-fluid p-2 mb-3 bg-black text-primary text-center fst-italic">
+    <div class="container-fluid p-2 bg-black text-primary text-center fst-italic">
         <p class="display-1">DJ Today</p>
     </div>
 
-    <div class="container-sm bg-black text-white">
+    <!-- nav menu -->
+    <div class="container-fluid p-2 mb-3 bg-dark">
+        <!-- nav menu -->
+        <div class="container-fluid">
+            <nav id="nav" class="navbar-expand text-white">
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Home</a> </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="#">Shows</a>
+                        <ul class="dropdown-menu" id="showDrop">
+                            <li> <a class="dropdown-item" href="show_pages/Past_Shows.html">Past Shows</a> </li>
+                            <li> <a class="dropdown-item" href="show_pages/Future_Shows.html">Future Shows </a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Book_Me.html">Book Me</a> </li>
+
+                    <li class="nav-item dropdown" id="playDrop">
+                        <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="#">Playlists</a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="playlist_pages/House_Playlist.html">House</a> </li>
+                            <li> <a class="dropdown-item" href="playlist_pages/Pop_Playlist.html">Pop</a> </li>
+                            <li> <a class="dropdown-item" href="playlist_pages/Nu-Disco_Playlist.html">Nu-Disco</a> </li>
+                            <li> <a class="dropdown-item" href="playlist_pages/Prof_Playlist.html">Professor's Favorites</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Testimonials.html">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_Me.html">About Me</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-sm bg-black text-white text-center">
         <p class="display-1">About Me</p>
     </div>
 
-    <!-- nav menu -->
-    <div class="container-sm bg-black">
-        <nav id="navbar" class="navbar-expand text-white">
-            <ul class="nav ">
-                <li class="nav-item">
-                    <a class="nav-link active" href="Home.html">Home</a> </li>
+    <main class="container">
+        <!--Personal info card-->
+        <div class="card" id="me">
+            <img class="card-img" src="../images/misc/Junk_Selfie.png" alt="Pic of me" width="100%">
+        </div>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="Shows.html">Shows</a>
-                    <ul class="dropdown-menu">
-                        <li> <a class="dropdown-item" href="Shows.html">Past Shows</a> </li>
-                        <li> <a class="dropdown-item" href="Shows.html">Future Shows </a> </li>
-                    </ul>
-                </li>
+        <!--About Me Text-->
+        <div class="container bg-dark text-white mt-2 text-center">
+            <p>
+                Hi! I'm Kevin Pollonais AKA DJ KJ, the creator of this site.
+                I spent days making this site to turn it in late, but with an extra page.
+                I already told you everything you need to know on the Home Page so from here on out it's gonna be useless filler and Lorum Ipsum.
+                Don't say I didn't warn you.
+            </p>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="Book_Me.html">Book Me</a> </li>
+            <p>
+                The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues.
+                The 20-meter pacer test will begin in 30 seconds.
+                Line up at the start.
+                The running speed starts slowly, but gets faster each minute after you hear this signal. [beep]
+                A single lap should be completed each time you hear this sound. [ding]
+                Remember to run in a straight line, and run as long as possible.
+                The second time you fail to complete a lap before the sound, your test is over.
+                The test will begin on the word start. On your mark, get ready, start.
+            </p>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="Playlists.html">Playlists</a>
-                    <ul class="dropdown-menu">
-                        <li> <a class="dropdown-item" href="#">House</a> </li>
-                        <li> <a class="dropdown-item" href="#">Pop</a> </li>
-                        <li> <a class="dropdown-item" href="#">Nu-Disco</a> </li>
-                        <li> <a class="dropdown-item" href="#"></a> </li>
-                    </ul>
-                </li>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta nisi et augue sagittis vehicula.
+                Nunc at aliquet risus, in vestibulum ex.
+                Suspendisse et velit rhoncus, pulvinar est id, blandit tellus.
+                Etiam dictum maximus elit, vel tincidunt metus lobortis non.
+                Proin vehicula vitae sem sit amet tincidunt. Praesent suscipit tortor est.
+                Donec lorem elit, cursus sit amet dui vitae, molestie bibendum nibh.
+                Integer tempus ipsum magna, a porttitor nulla viverra vitae.
+                Mauris ultrices, nisi nec scelerisque dapibus, lorem augue dignissim nulla, in hendrerit arcu tellus vel nisi.
+                Suspendisse potenti.
+                Suspendisse malesuada aliquet velit quis porta.
+            </p>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./About_Me.html">About Me</a>
-                </li>
-            </ul>
-        </nav>
+
+        </div>
+
+    </main>
+
+    <!--My Contact Info-->
+    <div class="container" id="conMe">
+        <h5 class="pt-3">Got Questions? Contact Me Here:</h5>
+        <p>Discord: <a href="https://discord.com/users/Jeggdude#7455"><img src="../images/misc/discord_logo.png" alt="Discord Logo"></a>
+            Email: <a href="mailto:ksp23@njit.edu">ksp23@njit.edu</a></p>
     </div>
 
-    <div class="container-fluid bg-dark text-white mt-2 text-center">
-        <p>Hi! I'm Kevin Pollonais AKA DJ KJ, the creator of this site.
-        I'm an IT student at NJIT who just likes to DJ as a hobby.
-        I primarily mix House and Pop music, since that's what I enjoy listening to.
-        I will work with anything as longs as the situation warrants it.</p>
-    </div>
-
-<p>Contact me: {discord} {NJT Email}</p>
+    <footer>
+        <div class="container-fluid">
+        <span>&copy Copyright Kevin Pollonais 2023
+            <button id="tosModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#tosModal">Terms of Use</button>
+            <button id="privModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#privModal">Privacy</button>
+            <button id="profModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#profModal">For Professor</button>
+        </span>
+        </div>
+    </footer>
 </body>
 
-<footer class="container-fluid bg-black text-white">
-    <p>&copy;Copyright Kevin Pollonais 2023</p>
-</footer>
+<!--Modals-->
+<div class="modal" id="tosModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">DJ Today TOS</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>This was created for EDUCATIONAL purposes.</li>
+                    <li>Any resemblance to real people is merely coincidental.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="privModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Privacy Notice</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Everything you do is being tracked by the government.</li>
+                    <li>You lost the right to privacy when you were born.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                    <li>I am inside your walls.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="profModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Notes to Professor</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Turned in late for visual polishing and audio.</li>
+                    <li>None of this is serious.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                    <li>I appreciated your jokes. Thanks for making an 8:30 class enjoyable.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </html>

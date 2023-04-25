@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Developed by Kevin Pollonais, IS117-002, Spring, 2023-->
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/playlistStyles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Professor's Favorites</title>
+</head>
+
+<body>
+    <!--Logo-->
+    <div class="container-fluid p-2 bg-black text-primary text-center fst-italic fw-bold">
+        <p class="display-1">DJ Today</p>
+    </div>
+
+    <div class="container-fluid p-2 mb-3 bg-dark">
+        <!-- nav menu -->
+        <div class="container-fluid">
+            <nav id="nav" class="navbar-expand text-white">
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../Home.html">Home</a> </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="#">Shows</a>
+                        <ul class="dropdown-menu" id="showDrop">
+                            <li> <a class="dropdown-item" href="../show_pages/Past_Shows.html">Past Shows</a> </li>
+                            <li> <a class="dropdown-item" href="../show_pages/Future_Shows.html">Future Shows </a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Book_Me.html">Book Me</a> </li>
+
+                    <li class="nav-item dropdown" id="playDrop">
+                        <a class="nav-link dropdown toggle" data-bs-toggle="dropdown" href="House_Playlist.html">Playlists</a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="House_Playlist.html">House</a> </li>
+                            <li> <a class="dropdown-item" href="Pop_Playlist.html">Pop</a> </li>
+                            <li> <a class="dropdown-item" href="Nu-Disco_Playlist.html">Nu-Disco</a> </li>
+                            <li> <a class="dropdown-item" href="Prof_Playlist.html">Professor's Favorites</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Testimonials.html">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../About_Me.html">About Me</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="pHeading" class="container-sm bg-black text-white">
+        <div class="row">
+            <div class="col">
+                <p class="display-3">Professor's Favorites</p>
+            </div>
+            <div class="col">
+                <!--Genre Selection-->
+                <div id="genreDropdown" class="dropdown">
+                    <button type="button" class="btn bg-dark text-white dropdown-toggle" data-bs-toggle="dropdown">
+                        Genres
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="House_Playlist.html">House</a></li>
+                        <li class="dropdown-item"><a href="Pop_Playlist.html">Pop</a></li>
+                        <li class="dropdown-item"><a href="Nu-Disco_Playlist.html">Nu-Disco</a></li>
+                        <li class="dropdown-item"><a href="Prof_Playlist.html">Professor's Favorites</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container pt-4">
+        <div class="row" id="musicCards">
+            <div class="col-lg" id="artCol">
+                <!--Card 1-->
+                <div class="card">
+                    <img class="card-img" src="../../images/Music/Profs-Faves/Never.png" alt="Never Gonna Give You Up Artwork">
+                </div>
+
+                <!--Card 2-->
+                <div class="card">
+                    <img class="card-img" src="../../images/Music/Profs-Faves/JustDance.png" alt="Just Dance Artwork">
+                </div>
+
+                <!--Card 3-->
+                <div class="card">
+                    <img class="card-img" src="../../images/Music/Profs-Faves/Sailing.png" alt="Sailing Artwork">
+                </div>
+            </div>
+            <!--Info Cards-->
+            <div class="col-lg" id="infoCol">
+                <!--Card 1-->
+                <div class="card">
+                    <div class="card-content">
+                        <h1 class="card-title">Never Gonna Give You Up</h1>
+                        <h3 class="card-text">
+                            Artist(s): Rick Astley <br>
+                            Release Date: 27 Jul 1987 <br>
+                            Label: RCA Records <br>
+                            Genre: Dance-pop <br>
+                            BPM: 98
+                        </h3>
+                        <audio controls>
+                            <source src="../../music/profs_faves/01%20Never%20Gonna%20Give%20You%20Up%20(Main).mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="card">
+                    <div class="card-content">
+                        <h1 class="card-title">Just Dance</h1>
+                        <h3 class="card-text">
+                            Artist(s): Lady Gaga <br>
+                            Release Date: 08 Apr 2008<br>
+                            Label: Streamline <br>
+                            Genre: Electro-Pop, Synth-Pop, Dance-Pop <br>
+                            BPM: 119
+                        </h3>
+                        <audio controls>
+                            <source src="../../music/profs_faves/01%20Just%20Dance%20(Original%20Mix).mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="card">
+                    <div class="card-content">
+                        <h1 class="card-title">Sailing</h1>
+                        <h3 class="card-text">
+                            Artist(s): Christopher Cross<br>
+                            Release Date: 15 Jun 1980 <br>
+                            Label: Warner Bros. <br>
+                            Genre: Soft Rock, Yacht Rock <br>
+                            BPM: 75
+                        </h3>
+                        <audio controls>
+                            <source src="../../music/profs_faves/01%20Sailing%20(Original%20Mix).mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+                <span>&copy Copyright Kevin Pollonais 2023
+                    <button id="tosModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#tosModal">Terms of Use</button>
+                    <button id="privModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#privModal">Privacy</button>
+                    <button id="profModalButton" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#profModal">For Professor</button>
+                </span>
+        </div>
+    </footer>
+
+</body>
+
+<!--Modals-->
+<div class="modal" id="tosModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">DJ Today TOS</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>This was created for EDUCATIONAL purposes.</li>
+                    <li>Any resemblance to real people is merely coincidental.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="privModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Privacy Notice</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Everything you do is being tracked by the government.</li>
+                    <li>You lost the right to privacy when you were born.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                    <li>I am inside your walls.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="profModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Notes to Professor</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Turned in late for visual polishing and audio.</li>
+                    <li>None of this is serious.</li>
+                    <li>Please don't sue me or worse; criticise my music taste.</li>
+                    <li>I appreciated your jokes. Thanks for making an 8:30 class enjoyable.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
