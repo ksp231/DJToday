@@ -2,3 +2,11 @@
 body {
     background-color: #007bff;
 }
+
+#navbar {
+    height: 200px;
+}
+
+#personal {
+    max-width: 500px;
+}

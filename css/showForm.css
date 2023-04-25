@@ -1,0 +1,38 @@
+body {
+    background-color: cornflowerblue;
+}
+
+form {
+    background-color: coral;
+    max-width: 500px;
+    border: #007bff solid 8px;
+}
+form div {
+
+}
+
+/*My Contact Info  css*/
+
+#conMe {
+    border: 10px solid red;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+#conMe a {
+    color: white;
+}
+
+#conMe img {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+footer {
+    border: 5px solid saddlebrown;
+    background-color: #007bff;
+    color:white;
+    text-align: center;
+
+}
